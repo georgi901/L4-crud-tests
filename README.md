@@ -27,4 +27,9 @@ pytest test_server.py -v
 ```
 
 ## GitHub Actions
-Testele ruleaza automat la fiecare push pe `main`.
+Testele ruleaza automat la fiecare push si pull request catre `main`. Rezultatul (PASSED/FAILED) apare in tab-ul **Actions** al repo-ului si ca status check pe commit/PR.
+
+## Verificare rezultate
+1. Deschide tab-ul **Actions** din repo
+2. Selecteaza ultimul workflow run "Teste Automate"
+3. Verifica job-ul "test" - cele 15 teste trebuie sa fie PASSED
